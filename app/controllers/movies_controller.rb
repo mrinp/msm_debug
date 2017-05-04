@@ -21,7 +21,8 @@ class MoviesController < ApplicationController
 
     @movie.save
 
-    render("show")
+    # render("show")
+    redirect_to("/movies/#{@movie.id}")
   end
 
   def edit_form

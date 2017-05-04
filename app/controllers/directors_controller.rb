@@ -30,9 +30,9 @@ class DirectorsController < ApplicationController
     @director = Director.find(params[:id])
 
     @director.dob = params[:dob]
-    @director.name = params[:name]
-    @director.bio = params[:bio]
-    @director.image_url = params[:image_url]
+    @director.name = params[:the_name]
+    @director.bio = params[:the_bio]
+    @director.image_url = params[:the_image_url]
 
     @director.save
 
